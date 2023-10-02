@@ -1,0 +1,162 @@
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+section{
+    display:block;
+    
+}
+
+.top-area{
+    color:white;
+    background-image: url("./images/space.jpg");  
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-color: #12486B;
+    height: 1000px;
+}
+
+.text-area{
+    font-family:"Sacramento", cursive;
+    padding-top:100px;
+    padding-bottom: 1rem;
+}
+
+
+.about{
+    /* background-color: #419197; */
+    padding-bottom: 0.5rem;
+}
+
+.about > img{
+    margin-top: 25px;
+    width: 100px;
+    height: 100px;
+    border-radius: 3rem;
+    
+}
+
+.projects{
+    display:grid;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* background-color: #419197;  */
+}
+
+.myprojects{
+    display:grid;
+    grid-template-columns: 0.75fr 2fr;
+    grid-template-rows: repeat(1fr 1fr);
+    width: 50%;
+    margin:50px auto 0 auto;
+    padding-bottom: 2%;
+    text-align:left;
+    row-gap:1rem;
+}
+
+.myprojects-item h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.myprojects-img{
+      display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myprojects-img img{
+    width: 150px;
+    height: 150px;
+}
+.myprojects-item{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    line-height:2;
+
+}
+
+
+.contacts{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #083233;
+    color:white;
+}
+
+.contacts p{
+    font-size: 13px;
+}
+
+.contacts-container{
+    display:grid;
+    grid-template-columns: 0.75fr 2fr;
+    grid-template-rows: repeat(1fr 1fr);
+    width: 15%;
+    margin: 20px auto 0 auto;
+   }
+
+
+footer{
+    /* padding-bottom: 1rem; */
+    background-color: #082633;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Montserrat', sans-serif;
+    font-size: 0.75rem;
+}
+
+
+@media(max-width: 412px){
+    .about{
+        font-size: 9px;
+    }
+
+    .projects{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.5rem;
+    }
+
+    .myprojects{
+        gap: 10px;
+    }
+
+    .myprojects img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .contacts{
+        font-size: 0.5rem;
+    }
+
+    .contacts-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom:5px;  
+    }
+
+    .contacts-img{
+        padding-bottom: 2px;
+        
+    }
+
+    footer{
+        font-size:9px ;
+    }
+}
