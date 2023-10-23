@@ -1,2 +1,2 @@
-# AngelaYuCourse
+# FullstackCourse
 Course Progression
